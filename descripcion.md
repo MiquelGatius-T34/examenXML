@@ -22,3 +22,29 @@
 | Importancia           | Vital                                                                                                                        |                                                                                                                                |
 | Urgencia              | Inmediata                                                                                                                    |                                                                                                                                |
 | Observaciones         |                                                                                                                              |                                                                                                                                |
+
+| Identificador         | CU-2                                                                                                                                                                               |                                                                            |
+|-----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
+| Nombre                | Suspender Examen                                                                                                                                                                   |                                                                            |
+| Descripcion           | El sistema deberá permitir al administrador decidir qué aspirante suspende determinado examen y en algunos casos en determinada etapa. Este caso de usoextiende de realizar examen. |                                                                            |
+| Precondicion          | Si el aspirante no cumple todos los requisitos.                                                                                                                                    |                                                                            |
+| Postcondicion         | Condición final exitoso: Si aspirante entrega documentos legales. Condición final fallido: Si el aspirante no entrega documentos legales.                                          |                                                                            |
+| Actores               | Administrador                                                                                                                                                                      |                                                                            |
+| Secuencia Normal      | Paso     | Accion                                                                     |
+|                       | 1        | Aspirante no entrega documentos legales                                    |
+|                       | 2        | Administrador determina que aspirante suspende examen según sea elcaso.    |
+|                       | 3        | Aspirante hace examen al que postula.                                      |
+|                       | 4        | Si suspende parcialmente su resultado anterior es válido por 1 año         |
+|                       | 5        | Si suspende totalmente espera un tiempo de 3 meses.                        |
+|                       | 6        | Si aspirante se retira sin justificación valida pasa a secuencia de error. |
+| Secuencia Alternativa | Paso     | Accion                                                                     |
+|                       |          |                                                                            |
+|                       |          |                                                                            |
+|                       |          |                                                                            |
+| Secuencia de error    | Paso     | Accion                                                                     |
+|                       | 1        | Se altera del retiro inesperado                                            |
+|                       | 2        | El sistema desecha a aspirante                                             |
+|                       | 3        | Y vuelve al paso 1 secuencia normal. Caso de uso realizar examen.          |
+| Importancia           | Importante |                                                                            |
+| Urgencia              | Hay presión |                                                                            |
+| Observaciones         |          |                                                                            |
