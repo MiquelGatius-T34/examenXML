@@ -23,13 +23,13 @@
 | Urgencia              | Inmediata                                                                                                                    |                                                                                                                                |
 | Observaciones         |                                                                                                                              |                                                                                                                                |
 
-| Identificador         | CU-2                                                                                                                                                                               |                                                                            |
+| Identificador         | CU-2|                                                                                 |
 |-----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
-| Nombre                | Suspender Examen                                                                                                                                                                   |                                                                            |
-| Descripcion           | El sistema deberá permitir al administrador decidir qué aspirante suspende determinado examen y en algunos casos en determinada etapa. Este caso de usoextiende de realizar examen. |                                                                            |
-| Precondicion          | Si el aspirante no cumple todos los requisitos.                                                                                                                                    |                                                                            |
+| Nombre                | Suspender Examen|                                                                      |
+| Descripcion           | El sistema deberá permitir al administrador decidir qué aspirante suspende determinado examen y en algunos casos en determinada etapa. Este caso de usoextiende de realizar examen. |                                                                       |
+| Precondicion          | Si el aspirante no cumple todos los requisitos.|                                      |
 | Postcondicion         | Condición final exitoso: Si aspirante entrega documentos legales. Condición final fallido: Si el aspirante no entrega documentos legales.                                          |                                                                            |
-| Actores               | Administrador                                                                                                                                                                      |                                                                            |
+| Actores               | Administrador|                                                                        |
 | Secuencia Normal      | Paso     | Accion                                                                     |
 |                       | 1        | Aspirante no entrega documentos legales                                    |
 |                       | 2        | Administrador determina que aspirante suspende examen según sea elcaso.    |
@@ -45,35 +45,70 @@
 |                       | 1        | Se altera del retiro inesperado                                            |
 |                       | 2        | El sistema desecha a aspirante                                             |
 |                       | 3        | Y vuelve al paso 1 secuencia normal. Caso de uso realizar examen.          |
-| Importancia           | Importante |                                                                            |
-| Urgencia              | Hay presión |                                                                            |
+| Importancia           | Importante |                                                                          |
+| Urgencia              | Hay presión |                                                                         |
 | Observaciones         |          |                                                                            |
 
-| Identificador         | CU-3                                                                                                                                                                                 |                                                                                |
+| Identificador         | CU-3|                                                                                |
 |-----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
-| Nombre                | Cumplir requisitos.                                                                                                                                                                  |                                                                                |
-| Descripcion           | El sistema deberá permitir al administrador verificar el cumplimiento de todos losrequisitos administrativos que el aspirante debe entregar. Este caso es include derealizar examen. |                                                                                |
-| Precondicion          | Si el aspirante cumple todos los requisitos puede realizar examen a que se postula.                                                                                                  |                                                                                |
-| Postcondicion         | Condición final exitoso: Si aspirante entrega toda la documentación. Condición final fallido: Si el aspirante no entrega toda la documentación.                                      |                                                                                |
-| Actores               | Administrador                                                                                                                                                                        |                                                                                |
-| Secuencia Normal      | Paso                                                                                                                                                                                 | Accion                                                                         |
-|                       | 1                                                                                                                                                                                    | Aspirante entrega todos los requisitos administrativos.                        |
-|                       | 2                                                                                                                                                                                    | Administrador determina si tiene todos los requisitos.                         |
-|                       | 3                                                                                                                                                                                    | Si cumple todos los requisitos.                                                |
-|                       | 4                                                                                                                                                                                    | Aspirante cumple un paso necesario para realizar examen.                       |
-|                       | 5                                                                                                                                                                                    | Si no cumple todos requisitos                                                  |
-|                       | 6                                                                                                                                                                                    | Pasa a secuencia alternativa                                                   |
-|                       | 7                                                                                                                                                                                    | Si requisitos están adulterados o sin certificación pasa a secuencia de error. |
-| Secuencia Alternativa | Paso                                                                                                                                                                                 | Accion                                                                         |
-|                       | 1                                                                                                                                                                                    | Se listan requisitos faltantes o erróneos.                                     |
-|                       | 2                                                                                                                                                                                    | Se registran requisitos                                                        |
-|                       | 3                                                                                                                                                                                    | Se validan requisitos.                                                         |
-|                       | 4                                                                                                                                                                                    | Si todo está bien pasa secuencia normal paso 3.                                |
-|                       | 5                                                                                                                                                                                    | Si documentos no pasan validación se va a secuencia de error.                  |
-| Secuencia de error    | Paso                                                                                                                                                                                 | Accion                                                                         |
-|                       | 1                                                                                                                                                                                    | Se alerta del error en documento                                               |
-|                       | 2                                                                                                                                                                                    | El sistema desecha a aspirante                                                 |
-|                       | 3                                                                                                                                                                                    | Y vuelve al paso 1 secuencia normal.                                           |
-| Importancia           | Vital                                                                                                                                                                                |                                                                                |
-| Urgencia              | Hay presión                                                                                                                                                                          |                                                                                |
-| Observaciones         |                                                                                                                                                                                      |                                                                                |
+| Nombre | Cumplir requisitos.|                                                                                |
+| Descripcion | El sistema deberá permitir al administrador verificar el cumplimiento de todos losrequisitos administrativos que el aspirante debe entregar. Este caso es include derealizar examen. ||
+| Precondicion | Si el aspirante cumple todos los requisitos puede realizar examen a que se postula.| |
+| Postcondicion         | Condición final exitoso: Si aspirante entrega toda la documentación. Condición final fallido: Si el aspirante no entrega toda la documentación.|                                                                                             |
+| Actores | Administrador|                                                                                  |
+| Secuencia Normal      | Paso| Accion                                                                      |
+|                       | 1| Aspirante entrega todos los requisitos administrativos.                        |
+|                       | 2| Administrador determina si tiene todos los requisitos.                         |
+|                       | 3| Si cumple todos los requisitos.                                                |
+|                       | 4| Aspirante cumple un paso necesario para realizar examen.                       |
+|                       | 5| Si no cumple todos requisitos                                                  |
+|                       | 6| Pasa a secuencia alternativa                                                   |
+|                       | 7| Si requisitos están adulterados o sin certificación pasa a secuencia de error. |
+| Secuencia Alternativa | Paso| Accion                                                                      |
+|                       | 1| Se listan requisitos faltantes o erróneos.                                     |
+|                       | 2| Se registran requisitos                                                        |
+|                       | 3| Se validan requisitos.                                                         |
+|                       | 4| Si todo está bien pasa secuencia normal paso 3.                                |
+|                       | 5| Si documentos no pasan validación se va a secuencia de error.                  |
+| Secuencia de error    | Paso| Accion                                                                      |
+|                       | 1| Se alerta del error en documento                                               |
+|                       | 2| El sistema desecha a aspirante                                                 |
+|                       | 3| Y vuelve al paso 1 secuencia normal.                                           |
+| Importancia           | Vital|                                                                            |
+| Urgencia              | Hay presión|                                                                      |
+| Observaciones         |                                                                                   |
+
+
+| Identificador         | CU-4||
+|-----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
+| Nombre                | Tribunal||
+| Descripcion           | El tribunal deberá decidir el número siempre impar de jueces, también define el criterio de evaluación y las notas de cada aspirante. Este caso es extiende de realizar examen                                                    ||
+| Precondicion          | Si el aspirante cumple Abono y requisitos administrativos||
+| Postcondicion         | Condición final exitoso: Si aspirante tiene buena capacidad y cumple criterios de valoración será promovido. Condición final fallido: Si aspirante no tiene buena capacidad o no cumple criterios de valoración no será promovido |                                                                                                    |
+| Actores               | Jueces, Administrador|                                                                                                    |
+| Secuencia Normal      | Paso| Accion                                                                                             |
+|                       | 1| Aspirante presenta pruebas de examen                                                               |
+|                       | 2| Tribunal califica cada prueba.                                                                     |
+|                       | 3| Tribunal presenta resultados.                                                                      |
+|                       | 4| Si aspirante no aprueba alguna fase de las pruebas                                                 |
+|                       | 5| Pasa a secuencia alternativa.                                                                      |
+|                       | 6| Si juez deja en blanco alguna calificación pasa a secuencia de error.                              |
+|                       ||                                                                                                    |
+| Secuencia Alternativa | Paso| Accion                                                                                             |
+|                       | 1| Si reprueba parcialmente un examen.                                                                |
+|                       | 2| Aspirante puede volver a continuar el examen en la fase que se quedó solo por el periodo de 1 año. |
+|                       | 3| Si reprueba totalmente un examen                                                                   |
+|                       | 4| Aspirante no puede volver a examen solo por el periodo de 3 meses.                                 |
+|                       | 5| Si aspirante vuelve al examen vuelve al paso 2 secuencia normal.                                   |
+| Secuencia de error    | Paso| Accion                                                                                             |
+|                       | 1| Se alerta del error en determinada nota.                                                           |
+|                       | 2| El sistema pide que ingresen la nota                                                               
+|                       | 3| Y vuelve al paso 1 secuencia normal.|
+| Importancia           | Vital||
+| Urgencia              | Hay presión||
+| Observaciones         |||
+
+
+
+
+
