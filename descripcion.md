@@ -108,7 +108,30 @@
 | Urgencia              | Hay presión||
 | Observaciones         |||
 
-
+| Identificador         | CU-5|                                                                           |
+|-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
+| Nombre                | Examen Cinturón Negro 1er DAN||
+| Descripcion           | El sistema deberá permitir al aspirante que califique a dar el examen que corresponda en este caso examen cinturón negro 1er DAN. Este caso generaliza de realizar examen. |                                                                           |
+| Precondicion          | Si el aspirante cumple todos los requisitos puede realizar examen a que se postula.|                                                                           |
+| Postcondicion         | Condición final exitoso: Aspirante aprueba y es promovido. Condición final fallido: Aspirante no aprueba o suspende el examen.||
+| Actores               | Tribunal y Aspirante.|                                                                           |
+| Secuencia Normal      | Paso| Accion|
+|                       | 1| Aspirante presenta pruebas bloque común.                                  |
+|                       | 2| Aspirante presenta pruebas bloque específico.                             |
+|                       | 3| Si aspirante no presenta algún bloque de las pruebas con dispensa médica. |
+|                       | 4| Pasa a secuencia alternativa.                                             |
+|                       | 5| Si aspirante no presenta algún bloque de las pruebas sin dispensa médica. |
+|                       | 6| Pasa a secuencia error                                                    |
+|                       ||                                                                           |
+| Secuencia Alternativa | Paso| Accion                                                                    |
+|                       | 1| Aspirante solo puede presentar examen a Cinturón Negro de Karate.         |
+|                       | 2| Vuelve al paso 1 secuencia normal.                                        |
+| Secuencia de error    | Paso| Accion                                                                    |
+|                       | 1| El sistema desecha a aspirante                                            |
+|                       | 2| Vuelve al paso 1 secuencia normal.                                        |
+| Importancia           | Vital|                                                                           |
+| Urgencia              | Inmediata|                                                                           |
+| Observaciones         | En la secuencia alternativa en el paso 2 vuelve la paso 1 secuencia normal pero de examen a Cinturón Negro de Karate||
 
 
 
