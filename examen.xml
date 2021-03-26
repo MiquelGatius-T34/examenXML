@@ -1,204 +1,126 @@
-<?xml version="1.0"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-targetNamespace="https://www.w3schools.com"
-xmlns="https://www.w3schools.com"
-elementFormDefault="qualified">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="examen.dtd" type="application/xml-dtd"?>
 
-<xs:element name="CriterioValoracion">
-    <xs:complexType>
-        <xs:sequence>
-            <xs:element name="Id_aspirante" type="xs:integer"/>
-        </xs:sequence>
-    </xs:complexType>
-    </xs:element>
-
-<xs:element name="aspirante">
-    <xs:complexType>
-        <xs:sequence>
-            <xs:element name="Id_aspirante" type="xs:integer"/>
-            <xs:element name="Nombres" type="xs:string"/>
-            <xs:element name="Apellidos" type="xs:string"/>
-            <xs:element name="DNI" type="xs:string"/>
-            <xs:element name="Telefono" type="xs:string"/>
-            <xs:element name="Direccion" type="xs:string"/>
-            <xs:element name="Fecha_nacimiento" type="xs:string"/>
-            <xs:element name="Dan" type="xs:string"/>
-            <xs:element name="Cinturon" type="xs:string"/>
-            <xs:element name="Fecha_Ingreso_Dan" type="xs:string"/>
-            <xs:element name="FotoAspirante" type="xs:string"/>
-            <xs:element name="Tiempo_Dan_Anterior" type="xs:string"/>
-            <xs:element name="FotoDNI" type="xs:string"/>
-            <xs:element name="FotoCarnetGrados" type="xs:string"/>
-        </xs:sequence>
-    </xs:complexType>
-</xs:element>
-    <xs:element name="Meritos">
-    <xs:complexType>
-        <xs:sequence>
-        <xs:element name="Id_aspirante" type="xs:integer"/>
-        <xs:element name="Edad_aspirante" type="xs:integer"/>
-        <xs:element name="LicenciaActualizada" type="xs:boolean"/>
-        <xs:element name="TrabajoEscrito" type="xs:boolean"/>
-        </xs:sequence>
-    </xs:complexType>
-    </xs:element>
-    <xs:element name="Convalidacion_Grados">
-    <xs:complexType>
-        <xs:sequence>
-        <xs:element name="Id_aspirante" type="xs:integer"/>
-        </xs:sequence>
-    </xs:complexType>
-    </xs:element>
-    <xs:element name="Requisitos_Aspirantes">
-    <xs:complexType>
-        <xs:sequence>
-        <xs:element name="SolicitudHasta3Dan" type="xs:boolean"/>
-        <xs:element name="D4anySuperiorCurriculum" type="xs:boolean"/>
-        </xs:sequence>
-    </xs:complexType>
-    </xs:element>
-    <xs:element name="DispensaMedica">
-    <xs:complexType>
-        <xs:sequence>
-        <xs:element name="Id_aspirante" type="xs:integer"/>
-        </xs:sequence>
-    </xs:complexType>
-    </xs:element>
-    <xs:element name="Jueces">
-    <xs:complexType>
-        <xs:sequence>
-        <xs:element name="Id_aspirante" type="xs:integer"/>
-        <xs:element name="Nombres" type="xs:string"/>
-        <xs:element name="Apellidos" type="xs:string"/>
-        <xs:element name="DiplomaJuez" type="xs:boolean"/>
-        </xs:sequence>
-    </xs:complexType>
-    </xs:element>
-        <xs:element name="Criterio_Valoracion">
-        <xs:complexType>
-            <xs:sequence>
-            <xs:element name="Indumentaria" type="xs:integer"/>
-            <xs:element name="AseoPersonal" type="xs:integer"/>
-            <xs:element name="EjecucionTecnica" type="xs:integer"/>
-            <xs:element name="Valores" type="xs:integer"/>
-            <xs:element name="Respuestas" type="xs:integer"/>
-        </xs:sequence>
-        </xs:complexType>
-        </xs:element>
-        <xs:element name="Tribunal">
-            <xs:complexType>
-                <xs:sequence>
-                <xs:element name="Numero_jueces" type="xs:integer"/>
-                <xs:element name="Calificacion_final" type="xs:integer"/>
-                </xs:sequence>
-            </xs:complexType>
-        </xs:element>
-    <xs:element name="AbonarCuota">
-           <xs:complexType>
-               <xs:sequence>
-                   <xs:element name="Id_aspirante" type="xs:integer"/>
-               </xs:sequence>
-           </xs:complexType>
-    </xs:element>
-    <xs:element name="SuspendeExamen">
-        <xs:complexType>
-            <xs:sequence>
-                <xs:element name="Id_aspirante" type="xs:integer"/>
-                <xs:element name="SuspendeParcial" type="xs:boolean"/>
-                <xs:element name="SuspendeTotal" type="xs:boolean"/>
-                <xs:element name="SuspendeSegundaFase" type="xs:boolean"/>
-            </xs:sequence>
-        </xs:complexType>
- </xs:element>
- <xs:element name="Hasta3erDan">
-    <xs:complexType>
-        <xs:sequence>
-            <xs:element name="Tecnicas" type="xs:string"/>
-            <xs:element name="Kata" type="xs:string"/>
-            <xs:element name="Kumite" type="xs:string"/>
-            <xs:element name="Campeonatos" type="xs:string"/>
-        </xs:sequence>
-    </xs:complexType>
-</xs:element>
-<xs:element name="CinturonNegro">
-    <xs:complexType>
-        <xs:sequence>
-            <xs:element name="Tecnica_Directa" type="xs:string"/>
-            <xs:element name="Tecnica_Circulares" type="xs:string"/>
-            <xs:element name="Tecnica_Pierna" type="xs:string"/>
-            <xs:element name="Teoria" type="xs:string"/>
-            <xs:element name="Kata" type="xs:string"/>
-            <xs:element name="Kumite" type="xs:string"/>
-        </xs:sequence>
-    </xs:complexType>
-</xs:element>
-<xs:element name="CinturonNegroPrimerDan">
-    <xs:complexType>
-        <xs:sequence>
-            <xs:element name="Tecnica_Directa" type="xs:string"/>
-            <xs:element name="Tecnica_Pierna" type="xs:string"/>
-            <xs:element name="Tecnica_DirectaIndirecta" type="xs:string"/>
-            <xs:element name="Tecnica_Combinada" type="xs:string"/>
-            <xs:element name="Teoria" type="xs:string"/>
-            <xs:element name="Kata" type="xs:string"/>
-            <xs:element name="Kumite" type="xs:string"/>
-            <xs:element name="Aplicación_Tecnica" type="xs:string"/>
-        </xs:sequence>
-    </xs:complexType>
-</xs:element>
-<xs:element name="CinturonNegroSegundoDan">
-    <xs:complexType>
-        <xs:sequence>
-            <xs:element name="Tecnica_Base" type="xs:string"/>
-            <xs:element name="Tecnica_Directa" type="xs:string"/>
-            <xs:element name="Tecnica_DirectaIndirecta" type="xs:string"/>
-            <xs:element name="Tecnica_Pierna" type="xs:string"/>
-            <xs:element name="Tecnica_Combinada" type="xs:string"/>
-            <xs:element name="Teoria" type="xs:string"/>
-            <xs:element name="Kata" type="xs:string"/>
-            <xs:element name="Kumite" type="xs:string"/>
-            <xs:element name="Campeonatos" type="xs:string"/>
-            <xs:element name="Tecnicas" type="xs:string"/>
-            <xs:element name="Aplicación_Tecnica" type="xs:string"/>
-            <xs:element name="Demo_libre" type="xs:string"/>
-        </xs:sequence>
-    </xs:complexType>
-</xs:element>
-<xs:element name="CinturonNegroTercerDan">
-    <xs:complexType>
-        <xs:sequence>
-            <xs:element name="Variaciones_Tecnica" type="xs:string"/>
-            <xs:element name="Teoria" type="xs:string"/>
-            <xs:element name="Kata" type="xs:string"/>
-            <xs:element name="Kumite" type="xs:string"/>
-            <xs:element name="Campeonatos" type="xs:string"/>
-            <xs:element name="Tecnicas" type="xs:string"/>
-            <xs:element name="Aplicaciones" type="xs:string"/>
-            <xs:element name="Aplicacion_Tecnica" type="xs:string"/>
-            <xs:element name="Demo_libre" type="xs:string"/>
-        </xs:sequence>
-    </xs:complexType>
-</xs:element>
-<xs:element name="CinturonNegroCuartoDan">
-    <xs:complexType>
-        <xs:sequence>
-            <xs:element name="Kata" type="xs:string"/>
-            <xs:element name="Kumite" type="xs:string"/>
-            <xs:element name="Coloquio" type="xs:string"/>
-            <xs:element name="Aplicacion_Tecnica" type="xs:string"/>
-            <xs:element name="Demo_libre" type="xs:string"/>
-        </xs:sequence>
-    </xs:complexType>
-</xs:element>
-<xs:element name="QuintoDanySuperior">
-    <xs:complexType>
-        <xs:sequence>
-            <xs:element name="Kata" type="xs:string"/>
-            <xs:element name="Coloquio" type="xs:string"/>
-        </xs:sequence>
-    </xs:complexType>
-</xs:element>
-
-
-
-</xs:schema>
+<Examen>
+    <Aspirante>
+        <id_aspirante></id_aspirante>
+        <Nombre></Nombre>
+        <Apellidos></Apellidos>
+        <Dni></Dni>
+        <Telefono></Telefono>
+        <Direccion></Direccion>
+        <Fecha_nacimiento></Fecha_nacimiento>
+        <Dan></Dan>
+        <Cinturon></Cinturon>
+        <Fecha_ingreso></Fecha_ingreso>
+        <FotoAspirante></FotoAspirante>
+        <Tiempo_Dan_Anterior></Tiempo_Dan_Anterior>
+        <FotoDni></FotoDni>
+        <FotoCarnetGrados></FotoCarnetGrados>
+    <Meritos>
+        <id_aspirante></id_aspirante>
+        <edad_aspirante></edad_aspirante>
+        <LicenciaActualizada></LicenciaActualizada>
+    </Meritos>
+    <Convalidacion_Grados>
+        <id_aspirante></id_aspirante>
+    </Convalidacion_Grados>
+    <Requisitos_Aspirante>
+        <SolicitudHasta3Dan></SolicitudHasta3Dan>
+        <cuartoDanySuperiorCurriculum></cuartoDanySuperiorCurriculum>
+    </Requisitos_Aspirante>
+    <DispensaMedica>
+        <id_aspirante></id_aspirante>
+    </DispensaMedica>
+</Aspirante>
+<Jueces>
+    <id_jueces></id_jueces>
+    <Nombre></Nombre>
+    <Apellidos></Apellidos>
+    <DiplomaJuez></DiplomaJuez>
+</Jueces>
+<Criterios_Valoracion>
+    <Indumentaria></Indumentaria>
+    <AseoPersonal></AseoPersonal>
+    <EjecucionTecnica></EjecucionTecnica>
+    <Valores></Valores>
+    <Respuestas></Respuestas>
+</Criterios_Valoracion>
+<Tribunal>
+    <Numero_jueces></Numero_jueces>
+    <Calificacion_final></Calificacion_final>
+</Tribunal>
+<AbonarCuota>
+    <id_aspirante></id_aspirante>
+</AbonarCuota>
+<SuspendeExamen>
+    <id_aspirante></id_aspirante>
+    <SuspendeParcial></SuspendeParcial>
+    <SuspendeTotal></SuspendeTotal>
+    <SuspendeSegundaFase></SuspendeSegundaFase>
+</SuspendeExamen>
+<Resultados>
+    <id_aspirante></id_aspirante>
+</Resultados>
+<CinturonNegro>
+    <Tecnica_Directa></Tecnica_Directa>
+    <Tecnica_Circulares></Tecnica_Circulares>
+    <Tecnica_Pierna></Tecnica_Pierna>
+    <Teoria></Teoria>
+    <Kata></Kata>
+    <Kumite></Kumite>
+</CinturonNegro>
+<CinturonNegroPrimerDan>
+    <Tecnica_Defensa></Tecnica_Defensa>
+    <Tecnica_Pierna></Tecnica_Pierna>
+    <Tecnica_DirectaIndirecta></Tecnica_DirectaIndirecta>
+    <TecnicaCombinada></TecnicaCombinada>
+    <Teoria></Teoria>
+    <Kata></Kata>
+    <Kumite></Kumite>
+    <Aplicacion_Tecnica></Aplicacion_Tecnica>
+</CinturonNegroPrimerDan>
+<CinturonNegroSegundoDan>
+    <Tecnica_Base></Tecnica_Base>
+    <Tecnica_Directa></Tecnica_Directa>
+    <Tecnica_IndirectaCircular></Tecnica_IndirectaCircular>
+    <Tecnica_Pierna></Tecnica_Pierna>
+    <Tecnica_Combinada></Tecnica_Combinada>
+    <Teoria></Teoria>
+    <Kata></Kata>
+    <Kumite></Kumite>
+    <Campeonatos></Campeonatos>
+    <Tecnicas></Tecnicas>
+    <Aplicaciones></Aplicaciones>
+    <Aplicacion_Tecnica></Aplicacion_Tecnica>
+    <Demo_libre></Demo_libre>
+</CinturonNegroSegundoDan>
+<CinturonNegroTercerDan>
+    <Variaciones_Tecnica></Variaciones_Tecnica>
+    <Kata></Kata>
+    <Kumite></Kumite>
+    <Campeonatos></Campeonatos>
+    <Tecnicas></Tecnicas>
+    <Aplicaciones></Aplicaciones>
+    <Aplicacion_Tecnica></Aplicacion_Tecnica>
+    <Demo_libre></Demo_libre>
+    <Atributos></Atributos>
+</CinturonNegroTercerDan>
+<Hasta3erDan>
+    <Tecnicas></Tecnicas>
+    <Kata></Kata>
+    <Kumite></Kumite>
+    <Campeonatos></Campeonatos>
+</Hasta3erDan>
+<CinturonNegroCuartoDan>
+    <Kumite></Kumite>
+    <Kata></Kata>
+    <Coloquio></Coloquio>
+    <Aplicacion_Tecnica></Aplicacion_Tecnica>
+    <Demo_libre></Demo_libre>
+</CinturonNegroCuartoDan>
+<QuintoDanySuperior>
+    <Kata></Kata>
+    <Coloquio></Coloquio>
+</QuintoDanySuperior>
+</Examen>
